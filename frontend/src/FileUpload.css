@@ -1,0 +1,42 @@
+/* src/FileUpload.css */
+.custom-file-input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .custom-file-input {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .custom-file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px dashed #ced4da;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-file-label:hover {
+    background-color: #e9ecef;
+  }
+  
+  .custom-file-label svg {
+    margin-right: 8px;
+  }
+  
+  .custom-file-input:focus + .custom-file-label {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
